@@ -167,7 +167,7 @@ F 1 "7pF" H 6665 5105 50  0000 L CNN
 F 2 "rosco_m68k:C2.5-3" H 6588 5000 50  0001 C CNN
 F 3 "~" H 6550 5150 50  0001 C CNN
 	1    6550 5150
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:C C5
@@ -474,8 +474,6 @@ Text GLabel 8750 5250 0    50   UnSpc ~ 0
 GND
 Text GLabel 10750 4900 2    50   UnSpc ~ 0
 VCC
-Wire Wire Line
-	9400 4450 10700 4450
 Connection ~ 7200 4450
 Text GLabel 3400 4300 0    50   Output ~ 0
 TXDB
@@ -872,7 +870,6 @@ Text GLabel 8100 6200 3    50   UnSpc ~ 0
 GND
 NoConn ~ 1050 2000
 NoConn ~ 1550 2400
-NoConn ~ 4950 5100
 Text GLabel 5400 3100 2    50   UnSpc ~ 0
 VCC
 Text GLabel 3400 5200 0    50   UnSpc ~ 0
@@ -990,11 +987,6 @@ F 3 "" H 10300 3550 50  0001 C CNN
 	4    10300 3550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9250 4450 9400 4450
-Connection ~ 9400 4450
-Wire Wire Line
-	8850 4450 8950 4450
 Wire Wire Line
 	9800 2700 9600 2700
 Wire Wire Line
@@ -1133,8 +1125,6 @@ Text GLabel 10550 5650 2    50   Output ~ 0
 VPA
 Text GLabel 8750 5650 0    50   Input ~ 0
 UVPA
-Wire Wire Line
-	9400 4450 9400 4750
 Text GLabel 5400 3400 2    50   Input ~ 0
 IACK
 Wire Wire Line
@@ -1180,8 +1170,6 @@ F 3 "~" H 9750 5450 50  0001 C CNN
 	1    9750 5450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9400 4750 9650 4750
 Wire Wire Line
 	10550 5350 10300 5350
 Wire Wire Line
