@@ -5,13 +5,13 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "ROSCO_M68K MC68681 DUART EXPANSION"
-Date "2020-06-07"
-Rev "0"
+Date "2021-03-01"
+Rev "2"
 Comp "The Really Old School Company Limited"
 Comment1 ""
 Comment2 "See https://github.com/rosco-m68k/hardware-projects/blob/master/LICENCE.hardware.txt"
 Comment3 "Open Source Hardware licenced under CERN Open Hardware Licence"
-Comment4 "Copyright ©2020 Ross Bamford and Contributors"
+Comment4 "Copyright ©2020-2021 Ross Bamford and Contributors"
 $EndDescr
 $Comp
 L Connector_Generic:Conn_02x32_Odd_Even J1
@@ -148,199 +148,147 @@ RESET
 NoConn ~ 1050 1500
 NoConn ~ -2300 8300
 $Comp
-L Interface:68681 IC1
-U 1 1 5EDD5E74
-P 5950 4300
-F 0 "IC1" H 5750 5900 50  0000 C CNN
-F 1 "68681" H 5750 5800 50  0000 C CNN
-F 2 "Package_DIP:DIP-40_W15.24mm_Socket_LongPads" H 5950 4300 50  0001 C CNN
-F 3 "http://bitsavers.trailing-edge.com/components/motorola/68000/68681_Dual_Asynchronous_Receiver_Transmitter_DUART_Sep85.pdf" H 5950 4300 50  0001 C CNN
-	1    5950 4300
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Crystal Q1
 U 1 1 5EDD7329
-P 4200 3600
-F 0 "Q1" H 4200 3868 50  0000 C CNN
-F 1 "Crystal" H 4200 3777 50  0000 C CNN
-F 2 "Crystal:Crystal_HC49-4H_Vertical" H 4200 3600 50  0001 C CNN
-F 3 "~" H 4200 3600 50  0001 C CNN
-	1    4200 3600
+P 6900 4450
+F 0 "Q1" H 6900 4718 50  0000 C CNN
+F 1 "Crystal" H 6900 4627 50  0000 C CNN
+F 2 "Crystal:Crystal_HC49-4H_Vertical" H 6900 4450 50  0001 C CNN
+F 3 "~" H 6900 4450 50  0001 C CNN
+	1    6900 4450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C3
 U 1 1 5EDD83D0
-P 3850 4300
-F 0 "C3" H 3965 4346 50  0000 L CNN
-F 1 "7pF" H 3965 4255 50  0000 L CNN
-F 2 "rosco_m68k:C2.5-3" H 3888 4150 50  0001 C CNN
-F 3 "~" H 3850 4300 50  0001 C CNN
-	1    3850 4300
+P 6550 5150
+F 0 "C3" H 6665 5196 50  0000 L CNN
+F 1 "7pF" H 6665 5105 50  0000 L CNN
+F 2 "rosco_m68k:C2.5-3" H 6588 5000 50  0001 C CNN
+F 3 "~" H 6550 5150 50  0001 C CNN
+	1    6550 5150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C5
 U 1 1 5EDD8A07
-P 4500 4300
-F 0 "C5" H 4615 4346 50  0000 L CNN
-F 1 "7pF" H 4615 4255 50  0000 L CNN
-F 2 "rosco_m68k:C2.5-3" H 4538 4150 50  0001 C CNN
-F 3 "~" H 4500 4300 50  0001 C CNN
-	1    4500 4300
+P 7200 5150
+F 0 "C5" H 7315 5196 50  0000 L CNN
+F 1 "7pF" H 7315 5105 50  0000 L CNN
+F 2 "rosco_m68k:C2.5-3" H 7238 5000 50  0001 C CNN
+F 3 "~" H 7200 5150 50  0001 C CNN
+	1    7200 5150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4500 4150 4500 3600
+	7200 5000 7200 4450
 Wire Wire Line
-	4350 3600 4500 3600
+	7050 4450 7200 4450
 Wire Wire Line
-	4050 3600 3850 3600
+	6750 4450 6550 4450
 Wire Wire Line
-	3850 3600 3850 4150
+	6550 4450 6550 5000
 Wire Wire Line
-	4500 4450 4500 4750
+	7200 5300 7200 5600
 Wire Wire Line
-	3850 4450 3850 4750
-Text GLabel 3850 4750 3    50   UnSpc ~ 0
+	6550 5300 6550 5600
+Text GLabel 6550 5500 3    50   UnSpc ~ 0
 GND
-Text GLabel 4500 4750 3    50   UnSpc ~ 0
+Text GLabel 7200 5500 3    50   UnSpc ~ 0
 GND
-Text GLabel 4950 3400 0    50   BiDi ~ 0
+Text GLabel 5400 4700 2    50   BiDi ~ 0
 BD0
-Text GLabel 4950 3500 0    50   BiDi ~ 0
+Text GLabel 3400 4800 0    50   BiDi ~ 0
 BD1
-Text GLabel 4950 3600 0    50   BiDi ~ 0
+Text GLabel 5400 4800 2    50   BiDi ~ 0
 BD2
-Text GLabel 4950 3700 0    50   BiDi ~ 0
+Text GLabel 3400 4900 0    50   BiDi ~ 0
 BD3
-Text GLabel 4950 3800 0    50   BiDi ~ 0
+Text GLabel 5400 4900 2    50   BiDi ~ 0
 BD4
-Text GLabel 4950 3900 0    50   BiDi ~ 0
+Text GLabel 3400 5000 0    50   BiDi ~ 0
 BD5
-Text GLabel 4950 4000 0    50   BiDi ~ 0
+Text GLabel 5400 5000 2    50   BiDi ~ 0
 BD6
-Text GLabel 4950 4100 0    50   BiDi ~ 0
+Text GLabel 3400 5100 0    50   BiDi ~ 0
 BD7
-Text GLabel 4950 4900 0    50   Input ~ 0
+Text GLabel 3400 3900 0    50   Input ~ 0
 RnW
-Text GLabel 4950 5100 0    50   Input ~ 0
+Text GLabel 5400 3700 2    50   Input ~ 0
 RESET
 Text GLabel 1550 3500 2    50   Input ~ 0
 DTACK
-$Comp
-L Device:Jumper JP4
-U 1 1 5EDE345B
-P 9550 6000
-F 0 "JP4" H 9550 6264 50  0000 C CNN
-F 1 "Jumper" H 9550 6173 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9550 6000 50  0001 C CNN
-F 3 "~" H 9550 6000 50  0001 C CNN
-	1    9550 6000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	9250 6000 8700 6000
+	9550 5550 8750 5550
 Wire Wire Line
-	9850 6000 10350 6000
-Text GLabel 10350 6000 2    50   Output ~ 0
+	10050 5550 10550 5550
+Text GLabel 10550 5550 2    50   Output ~ 0
 DTACK
-Text GLabel 8700 6000 0    50   Input ~ 0
+Text GLabel 8750 5550 0    50   Input ~ 0
 UDTACK
-Text GLabel 4950 5300 0    50   Output ~ 0
+Text GLabel 3400 4000 0    50   Output ~ 0
 UDTACK
-Wire Wire Line
-	3850 3100 3850 3600
-Connection ~ 3850 3600
-Text GLabel 4950 4800 0    50   Input ~ 0
+Connection ~ 6550 4450
+Text GLabel 5400 3600 2    50   Input ~ 0
 SEL
-Text GLabel 4950 4300 0    50   Input ~ 0
+Text GLabel 3400 3200 0    50   Input ~ 0
 A1
-Text GLabel 4950 4400 0    50   Input ~ 0
+Text GLabel 3400 3400 0    50   Input ~ 0
 A2
-Text GLabel 4950 4500 0    50   Input ~ 0
+Text GLabel 3400 3600 0    50   Input ~ 0
 A3
-Text GLabel 4950 4600 0    50   Input ~ 0
+Text GLabel 3400 3700 0    50   Input ~ 0
 A4
 $Comp
 L Connector:Conn_01x06_Male J3
 U 1 1 5EE19F70
-P 2600 3500
-F 0 "J3" H 2708 3881 50  0000 C CNN
-F 1 "UART_A" H 2708 3790 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 2600 3500 50  0001 C CNN
-F 3 "~" H 2600 3500 50  0001 C CNN
-	1    2600 3500
+P 2300 3500
+F 0 "J3" H 2408 3881 50  0000 C CNN
+F 1 "UART_A" H 2408 3790 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 2300 3500 50  0001 C CNN
+F 3 "~" H 2300 3500 50  0001 C CNN
+	1    2300 3500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x06_Male J4
 U 1 1 5EE1B2ED
-P 2600 4350
-F 0 "J4" H 2708 4731 50  0000 C CNN
-F 1 "UART_B" H 2708 4640 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 2600 4350 50  0001 C CNN
-F 3 "~" H 2600 4350 50  0001 C CNN
-	1    2600 4350
+P 2300 4350
+F 0 "J4" H 2408 4731 50  0000 C CNN
+F 1 "UART_B" H 2408 4640 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 2300 4350 50  0001 C CNN
+F 3 "~" H 2300 4350 50  0001 C CNN
+	1    2300 4350
 	1    0    0    -1  
 $EndComp
-Text GLabel 2800 3300 2    50   UnSpc ~ 0
+Text GLabel 2500 3300 2    50   UnSpc ~ 0
 GND
-Text GLabel 2800 3400 2    50   Output ~ 0
+Text GLabel 2500 3400 2    50   Output ~ 0
 CTSA
-Text GLabel 2800 3700 2    50   Input ~ 0
+Text GLabel 2500 3700 2    50   Input ~ 0
 TXDA
-Text GLabel 2800 3600 2    50   Output ~ 0
+Text GLabel 2500 3600 2    50   Output ~ 0
 RXDA
-NoConn ~ 2800 3800
-$Comp
-L Device:Jumper JP3
-U 1 1 5EE1EE9F
-P 9550 5650
-F 0 "JP3" H 9550 5914 50  0000 C CNN
-F 1 "Jumper" H 9550 5823 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9550 5650 50  0001 C CNN
-F 3 "~" H 9550 5650 50  0001 C CNN
-	1    9550 5650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9850 5650 10350 5650
-$Comp
-L Device:Jumper JP2
-U 1 1 5EE1F91D
-P 9550 5300
-F 0 "JP2" H 9550 5564 50  0000 C CNN
-F 1 "Jumper" H 9550 5473 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9550 5300 50  0001 C CNN
-F 3 "~" H 9550 5300 50  0001 C CNN
-	1    9550 5300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9850 5300 10350 5300
-Text GLabel 8700 5650 0    50   UnSpc ~ 0
+NoConn ~ 2500 3800
+Text GLabel 10550 5350 2    50   UnSpc ~ 0
 VCC
-Text GLabel 10350 5300 2    50   UnSpc ~ 0
+Text GLabel 8750 5450 0    50   UnSpc ~ 0
 VCCUA
-Text GLabel 10350 5650 2    50   UnSpc ~ 0
+Text GLabel 8750 5350 0    50   UnSpc ~ 0
 VCCUB
-Text GLabel 2800 3500 2    50   UnSpc ~ 0
+Text GLabel 2500 3500 2    50   UnSpc ~ 0
 VCCUA
-Text GLabel 2800 4350 2    50   UnSpc ~ 0
+Text GLabel 2500 4350 2    50   UnSpc ~ 0
 VCCUB
-Text GLabel 2800 4150 2    50   UnSpc ~ 0
+Text GLabel 2500 4150 2    50   UnSpc ~ 0
 GND
-Text GLabel 2800 4250 2    50   Output ~ 0
+Text GLabel 2500 4250 2    50   Output ~ 0
 CTSB
-Text GLabel 2800 4550 2    50   Input ~ 0
+Text GLabel 2500 4550 2    50   Input ~ 0
 TXDB
-Text GLabel 2800 4450 2    50   Output ~ 0
+Text GLabel 2500 4450 2    50   Output ~ 0
 RXDB
-NoConn ~ 2800 4650
-Wire Wire Line
-	9250 5300 8950 5300
+NoConn ~ 2500 4650
 $Comp
 L Connector_Generic:Conn_02x08_Odd_Even J2
 U 1 1 5EE2B8E5
@@ -402,29 +350,18 @@ Text GLabel 1450 7000 0    50   Input ~ 0
 EXTEN
 Text GLabel 3200 7000 0    50   Input ~ 0
 EXTEN
-$Comp
-L Device:Jumper JP1
-U 1 1 5EE39530
-P 9550 4950
-F 0 "JP1" H 9550 5214 50  0000 C CNN
-F 1 "Jumper" H 9550 5123 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9550 4950 50  0001 C CNN
-F 3 "~" H 9550 4950 50  0001 C CNN
-	1    9550 4950
-	1    0    0    -1  
-$EndComp
-Text GLabel 10350 4350 2    50   Output ~ 0
+Text GLabel 8750 4900 0    50   Output ~ 0
 EXTEN
 $Comp
 L Device:R R1
 U 1 1 5EE446D1
-P 8950 4350
-F 0 "R1" V 8850 4300 50  0000 L CNN
-F 1 "10K" V 9050 4250 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8880 4350 50  0001 C CNN
-F 3 "~" H 8950 4350 50  0001 C CNN
-	1    8950 4350
-	0    1    1    0   
+P 10500 4900
+F 0 "R1" V 10400 4850 50  0000 L CNN
+F 1 "10K" V 10600 4800 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 10430 4900 50  0001 C CNN
+F 3 "~" H 10500 4900 50  0001 C CNN
+	1    10500 4900
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	3200 6900 2800 6900
@@ -457,29 +394,29 @@ Text GLabel 4200 6100 2    50   Output ~ 0
 IP1
 Text GLabel 4200 6000 2    50   Output ~ 0
 IP0
-Text GLabel 6950 3900 2    50   Output ~ 0
+Text GLabel 5400 4400 2    50   Output ~ 0
 OP2
-Text GLabel 6950 4000 2    50   Output ~ 0
+Text GLabel 3400 4500 0    50   Output ~ 0
 OP3
-Text GLabel 6950 4100 2    50   Output ~ 0
+Text GLabel 5400 4500 2    50   Output ~ 0
 OP4
-Text GLabel 6950 4200 2    50   Output ~ 0
+Text GLabel 3400 4600 0    50   Output ~ 0
 OP5
-Text GLabel 6950 4300 2    50   Output ~ 0
+Text GLabel 5400 4600 2    50   Output ~ 0
 OP6
-Text GLabel 6950 4400 2    50   Output ~ 0
+Text GLabel 3400 4700 0    50   Output ~ 0
 OP7
-Text GLabel 6950 4600 2    50   Input ~ 0
+Text GLabel 3400 3800 0    50   Input ~ 0
 IP0
-Text GLabel 6950 4700 2    50   Input ~ 0
+Text GLabel 3400 3500 0    50   Input ~ 0
 IP1
-Text GLabel 6950 4800 2    50   Input ~ 0
+Text GLabel 5400 3500 2    50   Input ~ 0
 IP2
-Text GLabel 6950 4900 2    50   Input ~ 0
+Text GLabel 3400 3300 0    50   Input ~ 0
 IP3
-Text GLabel 6950 5000 2    50   Input ~ 0
+Text GLabel 5400 3200 2    50   Input ~ 0
 IP4
-Text GLabel 6950 5100 2    50   Input ~ 0
+Text GLabel 5400 3300 2    50   Input ~ 0
 IP5
 $Comp
 L 74xx_IEEE:74126 IC5
@@ -533,30 +470,20 @@ Text GLabel 10800 1950 2    50   3State ~ 0
 IPL2
 Text GLabel 9600 2300 3    50   UnSpc ~ 0
 GND
-Wire Wire Line
-	9250 4350 9250 4950
-Text GLabel 10350 4950 2    50   UnSpc ~ 0
+Text GLabel 8750 5250 0    50   UnSpc ~ 0
 GND
-Text GLabel 8700 4350 0    50   UnSpc ~ 0
+Text GLabel 10750 4900 2    50   UnSpc ~ 0
 VCC
 Wire Wire Line
-	9250 4350 10350 4350
-Wire Wire Line
-	9850 4950 10350 4950
-Wire Wire Line
-	4950 3100 3850 3100
-Wire Wire Line
-	4950 3200 4500 3200
-Wire Wire Line
-	4500 3200 4500 3600
-Connection ~ 4500 3600
-Text GLabel 6950 3400 2    50   Output ~ 0
+	9400 4450 10700 4450
+Connection ~ 7200 4450
+Text GLabel 3400 4300 0    50   Output ~ 0
 TXDB
-Text GLabel 6950 3500 2    50   Input ~ 0
+Text GLabel 3400 4100 0    50   Input ~ 0
 RXDB
-Text GLabel 6950 3200 2    50   Input ~ 0
+Text GLabel 5400 4000 2    50   Input ~ 0
 RXDA
-Text GLabel 6950 3100 2    50   Output ~ 0
+Text GLabel 5400 4200 2    50   Output ~ 0
 TXDA
 Wire Wire Line
 	800  700  1050 700 
@@ -696,12 +623,8 @@ F 3 "" H 7400 1600 50  0001 C CNN
 	1    7400 1600
 	1    0    0    -1  
 $EndComp
-NoConn ~ 6900 1700
-NoConn ~ 6900 1800
-NoConn ~ 6900 1900
 NoConn ~ 6900 2000
 NoConn ~ 7900 1800
-NoConn ~ 7900 1500
 NoConn ~ 7900 1400
 NoConn ~ 7900 1300
 NoConn ~ 7900 1200
@@ -718,12 +641,10 @@ Text GLabel 6900 1500 0    50   Input ~ 0
 FC2
 Text GLabel 6900 1600 0    50   Input ~ 0
 IRQ
-Text GLabel 3700 5400 0    50   Output ~ 0
-IRQ
 Text GLabel 7900 1700 2    50   Output ~ 0
 SEL_IN
 Text GLabel 7900 1600 2    50   3State ~ 0
-VPA
+UVPA
 Wire Wire Line
 	7400 900  6400 900 
 Wire Wire Line
@@ -951,10 +872,10 @@ Text GLabel 8100 6200 3    50   UnSpc ~ 0
 GND
 NoConn ~ 1050 2000
 NoConn ~ 1550 2400
-NoConn ~ 4950 5000
-Text GLabel 5950 2800 1    50   UnSpc ~ 0
+NoConn ~ 4950 5100
+Text GLabel 5400 3100 2    50   UnSpc ~ 0
 VCC
-Text GLabel 5950 5700 3    50   UnSpc ~ 0
+Text GLabel 3400 5200 0    50   UnSpc ~ 0
 GND
 Text GLabel 1550 2100 2    50   Output ~ 0
 A15
@@ -974,9 +895,9 @@ Text GLabel 1550 4600 2    50   Input ~ 0
 BRXDA
 Text GLabel 1050 5100 0    50   Output ~ 0
 BTXDA
-Text GLabel 6950 3700 2    50   Output ~ 0
+Text GLabel 5400 4300 2    50   Output ~ 0
 CTSA
-Text GLabel 6950 3800 2    50   Output ~ 0
+Text GLabel 3400 4400 0    50   Output ~ 0
 CTSB
 $Comp
 L Device:C C10
@@ -1070,17 +991,10 @@ F 3 "" H 10300 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8700 5650 8950 5650
+	9250 4450 9400 4450
+Connection ~ 9400 4450
 Wire Wire Line
-	8950 5300 8950 5650
-Connection ~ 8950 5650
-Wire Wire Line
-	8950 5650 9250 5650
-Wire Wire Line
-	9100 4350 9250 4350
-Connection ~ 9250 4350
-Wire Wire Line
-	8700 4350 8800 4350
+	8850 4450 8950 4450
 Wire Wire Line
 	9800 2700 9600 2700
 Wire Wire Line
@@ -1163,28 +1077,6 @@ VCC
 Text GLabel 8700 3850 0    50   UnSpc ~ 0
 GND
 $Comp
-L Device:R R2
-U 1 1 5EFEF14E
-P 4150 5150
-F 0 "R2" H 4220 5196 50  0000 L CNN
-F 1 "10K" H 4220 5105 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4080 5150 50  0001 C CNN
-F 3 "~" H 4150 5150 50  0001 C CNN
-	1    4150 5150
-	1    0    0    -1  
-$EndComp
-Text GLabel 4150 4900 1    50   UnSpc ~ 0
-VCC
-Wire Wire Line
-	3700 5400 4150 5400
-Wire Wire Line
-	4150 4900 4150 5000
-Wire Wire Line
-	4150 5300 4150 5400
-Connection ~ 4150 5400
-Wire Wire Line
-	4150 5400 4950 5400
-$Comp
 L Device:C C1
 U 1 1 5EF75A30
 P 900 7000
@@ -1214,4 +1106,106 @@ Wire Wire Line
 Connection ~ 2800 5700
 Wire Wire Line
 	2800 5700 3700 5700
+$Comp
+L XR68C681:XR68C681CJTR-F IC1
+U 1 1 603DDDD7
+P 3400 3100
+F 0 "IC1" H 4400 3593 60  0000 C CNN
+F 1 "XR68C681CJTR-F" H 4400 3487 60  0000 C CNN
+F 2 "Package_LCC:PLCC-44_THT-Socket" H 4400 3340 60  0001 C CNN
+F 3 "https://www.maxlinear.com/ds/xr68c681v210.pdf" H 4400 3381 60  0000 C CNN
+	1    3400 3100
+	1    0    0    -1  
+$EndComp
+Text GLabel 6900 1700 0    50   Input ~ 0
+A1
+Text GLabel 6900 1800 0    50   Input ~ 0
+A2
+Text GLabel 6900 1900 0    50   Input ~ 0
+A3
+Text GLabel 7900 1500 2    50   Output ~ 0
+IACK
+Wire Wire Line
+	9550 5650 8750 5650
+Wire Wire Line
+	10050 5650 10550 5650
+Text GLabel 10550 5650 2    50   Output ~ 0
+VPA
+Text GLabel 8750 5650 0    50   Input ~ 0
+UVPA
+Wire Wire Line
+	9400 4450 9400 4750
+Text GLabel 5400 3400 2    50   Input ~ 0
+IACK
+Wire Wire Line
+	7200 3800 7200 4450
+Wire Wire Line
+	6550 3900 6550 4450
+Wire Wire Line
+	5850 5100 6100 5100
+Wire Wire Line
+	5850 5000 5850 5100
+Wire Wire Line
+	5850 4600 5850 4700
+Text GLabel 5850 4600 1    50   UnSpc ~ 0
+VCC
+$Comp
+L Device:R R2
+U 1 1 5EFEF14E
+P 5850 4850
+F 0 "R2" H 5920 4896 50  0000 L CNN
+F 1 "10K" H 5920 4805 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5780 4850 50  0001 C CNN
+F 3 "~" H 5850 4850 50  0001 C CNN
+	1    5850 4850
+	1    0    0    -1  
+$EndComp
+Text GLabel 6100 5100 2    50   Output ~ 0
+IRQ
+Wire Wire Line
+	5400 5100 5850 5100
+Connection ~ 5850 5100
+Wire Wire Line
+	5400 3900 6550 3900
+Wire Wire Line
+	7200 3800 5400 3800
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even JP1-5
+U 1 1 60587A30
+P 9750 5450
+F 0 "JP1-5" H 9800 5867 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 9800 5776 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 9750 5450 50  0001 C CNN
+F 3 "~" H 9750 5450 50  0001 C CNN
+	1    9750 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 4750 9650 4750
+Wire Wire Line
+	10550 5350 10300 5350
+Wire Wire Line
+	10050 5450 10300 5450
+Wire Wire Line
+	10300 5450 10300 5350
+Connection ~ 10300 5350
+Wire Wire Line
+	10300 5350 10050 5350
+Wire Wire Line
+	8750 5450 9550 5450
+Wire Wire Line
+	9550 5350 8750 5350
+Wire Wire Line
+	10650 4900 10750 4900
+Wire Wire Line
+	10050 5250 10250 5250
+Wire Wire Line
+	10250 5250 10250 4900
+Wire Wire Line
+	10250 4900 10350 4900
+Wire Wire Line
+	8750 4900 10250 4900
+Connection ~ 10250 4900
+Wire Wire Line
+	8750 5250 9550 5250
 $EndSCHEMATC
