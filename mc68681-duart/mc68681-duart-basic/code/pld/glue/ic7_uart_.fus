@@ -30,9 +30,9 @@ Pin 17 = NC           XOR = 0   AC1 = 0
  22  xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx
  23  xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx
 
-Pin 16 = NC           XOR = 0   AC1 = 0
- 24  xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx
- 25  xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx
+Pin 16 = PPVPA        XOR = 0   AC1 = 1
+ 24  ---- ---- ---- ---- ---- ---- ---- ----
+ 25  ---- x--- x--- x--- -x-- x--- -x-- x---
  26  xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx
  27  xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx
  28  xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx
@@ -40,9 +40,9 @@ Pin 16 = NC           XOR = 0   AC1 = 0
  30  xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx
  31  xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx
 
-Pin 15 = PPVPA        XOR = 0   AC1 = 1
+Pin 15 = IACK         XOR = 1   AC1 = 1
  32  ---- ---- ---- ---- ---- ---- ---- ----
- 33  ---- x--- x--- x--- -x-- ---- ---- ----
+ 33  ---- ---- ---- ---- ---- ---- ---- ----
  34  xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx
  35  xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx
  36  xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx
@@ -51,7 +51,7 @@ Pin 15 = PPVPA        XOR = 0   AC1 = 1
  39  xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx
 
 Pin 14 = VPA          XOR = 1   AC1 = 1
- 40  ---- ---- ---- ---- ---x ---- ---- ----
+ 40  ---- ---- ---- ---x ---- ---- ---- ----
  41  xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx
  42  xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx
  43  xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx

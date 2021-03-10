@@ -11,15 +11,15 @@
                           |                 |
                       FC1 |  4           17 | NC
                           |                 |
-                      FC2 |  5           16 | NC
+                      FC2 |  5           16 | PPVPA
                           |                 |
-                      IRQ |  6           15 | PPVPA
+                      IRQ |  6           15 | IACK
                           |                 |
-                       NC |  7           14 | VPA
+                       A1 |  7           14 | VPA
                           |                 |
-                       NC |  8           13 | SELIN
+                       A2 |  8           13 | SELIN
                           |                 |
-                       NC |  9           12 | NC
+                       A3 |  9           12 | NC
                           |                 |
                       GND | 10           11 | NC
                           -------------------
