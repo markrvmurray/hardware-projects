@@ -1,0 +1,23 @@
+GAL16V8
+UARTGLUE
+
+IOSEL  CDS    FC0    FC1    FC2    IRQ    A1     A2     A3    GND
+NC     NC     SELIN  VPA    IACK   A6     JALTA  PPVPA  NC    VCC
+
+/SELIN     = /IOSEL * /CDS * /JALTA * /A6
+           + /IOSEL * /CDS * JALTA * A6
+/PPVPA     = /IRQ * FC0 * FC1 * FC2
+VPA.T      = GND
+VPA.E      = /PPVPA
+IACK       = VCC
+
+DESCRIPTION
+
+MC68681 DUART Select / IACK glue
+
+IACK is kept high by default as it cannot be used with the (default) even
+address space, however signals are available to make it work correctly
+if the decoder card is mapped low instead.
+
+Copyright (c)2020 Ross Bamford. See LICENSE.
+
