@@ -1211,7 +1211,7 @@ NoConn ~ 5850 1800
 Text GLabel 7900 1400 2    50   Input ~ 0
 A6
 Text GLabel 7900 1300 2    50   Input ~ 0
-JALTA
+ALTA
 Wire Wire Line
 	9550 5550 8750 5550
 Wire Wire Line
@@ -1219,7 +1219,7 @@ Wire Wire Line
 Text GLabel 8750 5550 0    50   Input ~ 0
 VCC
 Text GLabel 10550 5550 2    50   Output ~ 0
-JALTA
+ALTA
 $Comp
 L Device:R R3
 U 1 1 605B3DF7
