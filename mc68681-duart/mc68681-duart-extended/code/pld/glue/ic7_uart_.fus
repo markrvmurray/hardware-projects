@@ -30,7 +30,7 @@ Pin 17 = ALTA         XOR = 0   AC1 = 1
  22  xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx
  23  xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx
 
-Pin 16 = A6           XOR = 0   AC1 = 1
+Pin 16 = A7           XOR = 0   AC1 = 1
  24  xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx
  25  xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx
  26  xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx

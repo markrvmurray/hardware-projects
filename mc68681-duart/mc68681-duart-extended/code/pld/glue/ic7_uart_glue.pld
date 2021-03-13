@@ -2,10 +2,10 @@ GAL16V8
 UARTGLUE
 
 IOSEL  CDS    FC0    FC1    FC2    IRQ    A1     A2     A3    GND
-NC     NC     SELIN  VPA    IACK   A6     ALTA   PPVPA  NC    VCC
+NC     NC     SELIN  VPA    IACK   A7     ALTA   PPVPA  NC    VCC
 
-/SELIN     = /IOSEL * /CDS * /ALTA * /A6
-           + /IOSEL * /CDS * ALTA * A6
+/SELIN     = /IOSEL * /CDS * /ALTA * /A7
+           + /IOSEL * /CDS * ALTA * A7
 /PPVPA     = /IRQ * FC0 * FC1 * FC2 * A1 * /A2 * A3
 VPA.T      = GND
 VPA.E      = /PPVPA

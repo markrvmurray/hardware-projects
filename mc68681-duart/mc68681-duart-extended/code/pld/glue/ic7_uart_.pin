@@ -17,7 +17,7 @@
   13   | SELIN    | Output
   14   | VPA      | Output
   15   | IACK     | Output
-  16   | A6       | Input
+  16   | A7       | Input
   17   | ALTA     | Input
   18   | PPVPA    | Output
   19   | NC       | NC

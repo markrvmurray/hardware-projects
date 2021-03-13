@@ -574,8 +574,6 @@ F 3 "http://ww1.microchip.com/downloads/en/devicedoc/atmel-0364-pld-atf16v8b-8bq
 	1    5350 1600
 	1    0    0    -1  
 $EndComp
-Text GLabel 4850 1200 0    50   Input ~ 0
-A7
 Text GLabel 4850 1300 0    50   Input ~ 0
 A8
 Text GLabel 4850 1400 0    50   Input ~ 0
@@ -1209,7 +1207,7 @@ Wire Wire Line
 Connection ~ 10300 5350
 NoConn ~ 5850 1800
 Text GLabel 7900 1400 2    50   Input ~ 0
-A6
+A7
 Text GLabel 7900 1300 2    50   Input ~ 0
 ALTA
 Wire Wire Line
@@ -1249,9 +1247,11 @@ F 3 "" H 10300 6150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10300 6000 10300 6150
-NoConn ~ 4850 1100
+NoConn ~ 4850 1200
 Wire Wire Line
 	8750 5350 9550 5350
 Text GLabel 1050 2200 0    50   Output ~ 0
 LDS
+Text GLabel 4850 1100 0    50   Input ~ 0
+A6
 $EndSCHEMATC

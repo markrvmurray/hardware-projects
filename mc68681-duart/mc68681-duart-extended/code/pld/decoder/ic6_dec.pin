@@ -2,8 +2,8 @@
 
  Pin # | Name     | Pin Type
 -----------------------------
-   1   | NC       | Input
-   2   | A7       | Input
+   1   | A6       | Input
+   2   | NC       | Input
    3   | A8       | Input
    4   | A9       | Input
    5   | A10      | Input
